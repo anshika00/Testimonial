@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+$("#flip").on({
+    mouseenter: function(){
+      $("#panel").slideDown("slow");
+    },  
+    click: function(){
+      $("#panel").slideUp("slow");
+    }
+}); 
+$("#arrow").mouseup(function(){
+    $("#slide").slideToggle("slow");
+  });
+$('[data-toggle="tooltip"]').tooltip();  
+$("#a").click(function(){
+   $("#aa").animate({width:'+=45'});
+});
+$("#b").click(function(){
+   $("#bb").animate({width:'+=45'});
+});
+$("#c").click(function(){
+   $("#cc").animate({width:'+=45'});
+});
+$("#d").click(function(){
+   $("#dd").animate({width:'+=45'});
+});
+$("#e").click(function(){
+   $("#ee").animate({width:'+=45'});
+});
+$("#f").click(function(){
+   $("#ff").animate({width:'+=45'});
+});
+$("#g").click(function(){
+   $("#gg").animate({width:'+=45'});
+});
+$("#h").click(function(){
+   $("#hh").animate({width:'+=45'});
+});
+});
+</script>
+
+<style>
+.btn{border-radius: 24px;}
+h1{margin-top: 50px;}
+#panel{
+padding: 50px 65px;
+display: none;
+background-color: #f5f5dc;
+}
+#flip{
+padding: 5px;
+background-color: #f5f5dc;
+border: solid 1px #c3c3c3;
+border-radius: 24px;
+text-align: center;
+margin: 30px 300px 0px 300px;
+}
+#demoimage {
+  float: left;
+}
+#Courses{
+background-color: #d3d3d3;
+padding: 40px;
+margin:40px 0px 0px;
+}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+#slide{
+display: none;
+background-color: #d3d3d3;
+}
+#Testimonials{
+padding: 50px 65px;
+background-color: #e6e6fa;
+}
+.user{
+border-radius:50%;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+</style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+ <a class="navbar-brand" href="#">Navbar</a>
+ <button class="btn btn-success navbar-toggler" type="button" data-toggle="collapse" data-target="#collaps">
+   <span class="navbar-toggle-icon"></span>
+ </button>
+<div class="collapse navbar-collapse" id="collaps">
+ <ul class="navbar-nav">
+  <li class="nav-item"> <a class="nav-link" href="#home">Home</a> </li>
+  <li class="nav-item"> <a class="nav-link" href="#About">About</a> </li>
+  <li class="nav-item"> <a class="nav-link" href="#Courses">Courses</a> </li>
+  <li class="nav-item"> <a class="nav-link" href="#Testimonials">Testimonials</a> </li>
+  <li class="nav-item"> <a class="nav-link disabled" href="#Query">Query</a> </li>
+  <li class="nav-item"> <a class="nav-link" href="#ContactUs">ContactUs</a> </li>
+ </ul>
+</div>
+</nav>
+
+<div class="jumbotron jumbotron-fluid" id="home">
+ <div class="container">
+  <center> <h1>Lets WebTech </h1><hr>
+   <p>Here, we care for you all for your better future! No strings attached, No herdals.</p>
+   <button type="button" class="btn btn-secondary btn-outline-light" id="b1"><i class="fa fa-home"></i> Visit us</button
+  </center>
+  </div>
+</div>
+
+<div class="container" id="About">
+<center>
+<h3><p class="text-danger">WHY IS IT SO GREAT ?</p></h3>
+We provide our student members to have a single platform for whatever they want to learn about the WEBTECH curriculum providing them with subjects
+like BS4,Jquery,HTML,PHP,CSS!!
+</center>
+</div>
+
+<div id="flip">Ride in to explore</div>
+<div id="panel">
+   <div class="row">
+    <div class="col-sm-5" style="height:400px;"><img id="demoimage" src="aboutus.jfif" width="300" height="400"></div>
+    <div class="col-sm-7"> 
+     <dt><h3>SAFETY</h3></dt>
+     <dd>The most secure portal where you can customize <br>your own classroom,can give yourself ranks <br>with the given progress bars of the completion of due course.</dd>
+     <br>
+     <dt><h3>COMPREHENSIVE</h3></dt>
+     <dd>You get a platform to interact with various qualified <br>and highly supporting teachers avaoilable 24/7 to help you clear with <br> your doubts and for your guidence related to any personal subject related query.</dd>
+     <br>
+     <dt><h3>ECONOMIC</h3></dt>
+     <dd>Here you get a chance to earn scholarships by <br>passing exam levels of a particular subject <br>and unlock the further tutorials from great teachers.</dd>
+    </div>
+   </div>
+</div>
+
+<div class="fluid" id="Courses">
+<center>
+<h2><p class="text-body">Our Best Courses</p></h2>
+Get ready for a super deep ride in the world of ADVANCE WEB TECHNOLOGY exploring the following given courses with the material collected from highly rated academic institutes and websites all at one place only for our students. We are for you ,of you and from you because we care for you.
+</center>
+<br><br>
+
+<div class="fluid">
+<div class="row">
+  <div class="column">
+    <div class="card" style="width:300px">
+    <img class="card-img-top" src="html.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title"><center>HTML</center></h4>
+      <p class="card-text">Learn html on w3schools with theory on each topic and some practice problems.</p>
+      <center>
+         <a href="https://www.w3schools.com/html/default.asp" class="btn btn-info">Visit Course</a>
+         <button type="button" class="btn btn-info" id="a">
+           <span class="badge badge-warning" data-toggle="tooltip" title="click to increase the progress">1 hour</span>
+      </button></center><br>
+     <div class="progress">
+    <div class="progress-bar bg-success" style="width: 0%;" id="aa">Go 5 hours!</div>
+  </div>
+   </div>
+   </div>
+   </div>
+  <div class="column">
+    <div class="card" style="width:300px">
+    <img class="card-img-top" src="javascript.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title"><center>JAVASCRIPT</center></h4>
+      <p class="card-text">Learn javascript on w3schools with theory on each topic and some practice problems.</p>
+      <center><a href="https://www.w3schools.com/js/default.asp" class="btn btn-info">Visit Course</a>
+	<button type="button" class="btn btn-info" id="b">
+         <span class="badge badge-warning" data-toggle="tooltip" title="click to increase the progress">1 hour</span>
+      </button></center><br>
+      <div class="progress">
+    <div class="progress-bar bg-success" style="width:0%" id="bb">Go 5 hours!</div>
+   </div>
+   </div>
+   </div>
+   </div>
+  <div class="column">
+    <div class="card" style="width:300px">
+    <img class="card-img-top" src="bootstrap.jfif" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title"><center>BOOTSTRAP4</center></h4>
+      <p class="card-text">Learn bootstrap4 on w3schools with theory on each topic and some practice problems.</p>
+      <center><a href="https://www.w3schools.com/bootstrap4/default.asp" class="btn btn-info">Visit Course</a>
+      <button type="button" class="btn btn-info" id="c">
+      <span class="badge badge-warning" data-toggle="tooltip" title="click to increase the progress">1 hour</span>
+     </button></center><br>
+<div class="progress">
+    <div class="progress-bar bg-success" style="width:0%" id="cc">Go 5 hours!</div>
+   </div>
+    </div>
+   </div>
+   </div>
+  <div class="column">
+    <div class="card" style="width:300px">
+    <img class="card-img-top" src="jquery.jfif" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title"><center>JQUERY</center></h4>
+      <p class="card-text">Learn jquery on w3schools with theory on each topic and some practice problems.</p>
+      <center><a href="https://www.w3schools.com/jquery/default.asp" class="btn btn-info">Visit Course</a>
+      <button type="button" class="btn btn-info" id="d">
+      <span class="badge badge-warning" data-toggle="tooltip" title="click to increase the progress">1 hour</span>
+      </button></center><br>
+<div class="progress">
+    <div class="progress-bar bg-success" style="width:0%" id="dd">Go 5 hours!</div>
+   </div>
+   </div>
+   </div>
+   </div>
+   </div>
+<div id="arrow"><center>v</center></div>
+</div>
+<div id="slide">
+ <div class="fluid">
+   <div class="row">
+     <div class="column">
+       <div class="card" style="width:300px">
+       <img class="card-img-top" src="php.jfif" alt="Card image" style="width:100%">
+        <div class="card-body">
+        <h4 class="card-title"><center>PHP</center></h4>
+        <p class="card-text">Learn html on w3schools with theory on each topic and some practice problems.</p>
+        <center><a href="https://www.w3schools.com/php/default.asp" class="btn btn-info">Visit Course</a>
+        <button type="button" class="btn btn-info" id="e">
+        <span class="badge badge-warning" data-toggle="tooltip" title="click to increase the progress">1 hour</span>
+        </button></center><br>
+<div class="progress">
+    <div class="progress-bar bg-success" style="width:0%" id="ee">Go 5 hours!</div>
+        </div>
+       </div>
+    </div>
+</div>
+    <div class="column">
+       <div class="card" style="width:300px">
+       <img class="card-img-top" src="css.jfif" alt="Card image" style="width:100%">
+       <div class="card-body">
+       <h4 class="card-title"><center>CSS</center></h4>
+       <p class="card-text">Learn php on w3schools with theory on each topic and some practice problems.</p>
+       <center><a href="https://www.w3schools.com/css/default.asp" class="btn btn-info">Visit Course</a>
+       <button type="button" class="btn btn-info" id="f">
+       <span class="badge badge-warning" data-toggle="tooltip" title="click to increase the progress">1 hour</span>
+       </button></center><br>
+<div class="progress">
+    <div class="progress-bar bg-success" style="width:0%" id="ff">Go 5 hours!</div>
+       </div>
+       </div>
+    </div>
+</div>
+    <div class="column">
+       <div class="card" style="width:300px">
+       <img class="card-img-top" src="ajs.png" alt="Card image" style="width:100%">
+       <div class="card-body">
+       <h4 class="card-title"><center>ANGULARJS</center></h4>
+       <p class="card-text">Learn Angularjs on w3schools with theory on each topic and some practice problems.</p>
+       <center><a href="https://www.w3schools.com/angular/default.asp" class="btn btn-info">Visit Course</a>
+       <button type="button" class="btn btn-info" id="g">
+       <span class="badge badge-warning" data-toggle="tooltip" title="click to increase the progress">1 hour</span>
+       </button></center><br>
+<div class="progress">
+    <div class="progress-bar bg-success" style="width:0%" id="gg">Go 5 hours!</div>
+       </div>
+       </div>
+    </div>
+</div>
+    <div class="column">
+       <div class="card" style="width:300px">
+       <img class="card-img-top" src="ajax.jfif" alt="Card image" style="width:100%">
+       <div class="card-body">
+       <h4 class="card-title"><center>AJAX</center></h4>
+       <p class="card-text">Learn ajax on w3schools with theory on each topic and some practice problems.</p>
+       <center><a href="https://www.w3schools.com/js/js_ajax_intro.asp" class="btn btn-info">Visit Course</a>
+       <button type="button" class="btn btn-info" id="h">
+       <span class="badge badge-warning" data-toggle="tooltip" title="click to increase the progress">1 hour</span>
+       </button></center><br>
+    <div class="progress">
+    <div class="progress-bar bg-success" style="width:0%" id="hh">Go 5 hours!</div>
+       </div>
+       </div>
+    </div>
+</div>
+  </div>
+ </div>
+</div>
+</div>
+<br><br>
+
+<div class="fluid" id="Testimonials">
+  <center>
+   <h2 class="h1-responsive font-weight-bold mb-5">Testimonials</p></h2><br>
+   
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+
+   <div class="carousel-item active" id="pp1">
+   <img src="p1.jfif" class="user"><br>
+   <blockquotes>
+    <i class="fa fa-quote-left"></i>Hi! I had a great experience working with Let's Webtech. I am a teacher <br>here and students 
+    i interact with are very happy and enthusiastic to learn and<br> have an extra keen to learn things with 
+    exceptional doubts that i love to clear.
+   </blockquotes>
+   <h4>Anshika Gupta</h4>Analyst at Lorem Impsum<br><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+   </div>
+<div class="carousel-item" id="pp2">
+<img src="p2.jfif" class="user"><br>
+<blockquotes>
+<i class="fa fa-quote-left" aria-hidden="true"></i>Hi! I had a great experience working with Let's Webtech. I am a teacher <br>here and students 
+i interact with are very happy and enthusiastic to learn and<br> have an extra keen to learn things with 
+exceptional doubts that i love to clear.
+</blockquotes>
+<h4>Kapil Arora</h4>CEO at Fantam Halls<br><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+</div>
+<div class="carousel-item" id="pp3">
+<img src="p3.jfif" class="user"><br>
+<blockquotes>
+<i class="fa fa-quote-left" aria-hidden="true"></i>Hi! I had a great experience working with Let's Webtech. I am a teacher <br>here and students 
+i interact with are very happy and enthusiastic to learn and<br> have an extra keen to learn things with 
+exceptional doubts that i love to clear.
+</blockquotes>
+<h4>Raaghav Kaushik</h4>Founder at ET Company<br><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+</div>
+<div class="carousel-item" id="pp4">
+<img src="p4.jfif" class="user"><br>
+<blockquotes>
+<i class="fa fa-quote-left" aria-hidden="true"></i>Hi! I had a great experience working with Let's Webtech. I am a teacher <br>here and students 
+i interact with are very happy and enthusiastic to learn and<br> have an extra keen to learn things with 
+exceptional doubts that i love to clear.
+</blockquotes>
+<h4>Dr. Meenu Arora</h4>HOD at XYZ<br><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+</div>
+</div>
+
+<a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</center>
+</div>
+</body>
+</html>
